@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;1,500&display=swap');
+
+html {
+  font-family: 'Asap', sans-serif;
+  color: rgb(78, 78, 78);
+  font-size: 10px;
+  min-height: 100%;
+  min-width: 100%;
+  background: linear-gradient(180deg, rgba(255, 238, 164, 1) 0%, rgba(255, 211, 195, 1) 100%);
+}
+
+body {
+  height: 100%;
+}
+
+/* HEADER E BIO */
+
+header {
+  display: grid;
+  grid-template-rows: 120px 3rem 3rem;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 600px;
+  gap: 2%;
+  padding: 1rem;
+}
+
+header img {
+  grid-row: 1;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+}
+
+.titolo {
+  grid-row: 2;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 5rem; 
+  text-align: center;
+}
+
+p.titolo a:link {
+  text-decoration: none;
+  color: rgb(51, 173, 204);
+}
+
+p.titolo a:visited {
+  color: rgb(51, 173, 204);
+}
+
+p.titolo a:hover {
+  color:  rgb(181, 102, 102); 
+}
+
+.bio {
+  grid-row: 3;
+  text-align: center;
+}
+
+/* NAV */
+
+nav {
+  max-width: 600px;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  margin: auto;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  padding: 0px; 
+}
+
+nav li {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  flex: 1 200px;
+  padding: 1rem;
+  margin: 0.2rem;
+  text-align: center;
+  max-width: 200px;
+  background:rgba(255, 211, 195, 1)
+}
+
+nav li.selected {
+  border: 2px solid rgb(51, 173, 204);
+}
+
+nav a:link,
+a:visited {
+  text-decoration: none;
+  color: rgb(181, 102, 102); 
+}
+
+nav a:hover {
+  color: rgb(51, 173, 204);
+}
+
+nav a:active {
+  color: rgb(255, 0, 64);
+}
+
+/* MAIN */
+
+main {
+  max-width: 100%;
+  margin: 2rem;
+}
+
+main p {
+  text-align: center; 
+  margin: 2rem; 
+  font-size: 1.6rem;
+}
+
+.phototable {
+  width: 60vw; 
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem; 
+  margin-right: 1rem; 
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+.card img {
+  transition: 1s; 
+}
+
+.card img:hover {
+  opacity: 0.7;
+  border-radius: 20px;
+  transition: 1s; 
+}
+
+.bigcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem; 
+  margin-right: 1rem; 
+}
+
+.bigcard img {
+  max-width: 100%; 
+}
+
+.contatti {
+  max-width: 60%; 
+}
+
+.contactform {
+  display: block;
+  text-align: center; 
+  height: 520px;
+  overflow: hidden;  
+}
+
+/* SLIDER 
+tutorial: https://www.html.it/articoli/creare-uno-slider-con-html-e-css-tutorial/  */
+
+.slider-container
+{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.image-container
+{
+    width: 400px;
+    height: 200px;
+    position: relative;
+    transition: 2s;
+
+}
+
+#slider-image-1:target ~ .image-container
+{
+   left: 0px;
+}
+#slider-image-2:target ~ .image-container
+{
+   left: -200px;
+}
+
+.button-container
+{
+	position: relative;
+	top: -20px;
+  left: 100px; 
+}
+
+.slider-change
+{
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+}
+
+/* FOOTER */
+
+.footer {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  color: grey;
+}
