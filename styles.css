@@ -134,6 +134,12 @@ main p {
   flex-wrap: wrap;
 }
 
+@media (orientation: portrait) {
+  .phototable {
+    width: 80vw; 
+  }
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -201,7 +207,20 @@ main p {
   display: block;
   text-align: center; 
   height: 90%;
-  overflow: hidden;  
+  overflow: hidden;
+}
+
+.contactform iframe {
+  width: 640px; 
+  height: 542px;   
+}
+
+@media (max-width: 664px) {
+    
+  .contactform iframe {
+    width: 350px;
+    height: 566px; 
+  }
 }
 
 /* SLIDER 
