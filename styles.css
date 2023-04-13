@@ -271,8 +271,8 @@ tutorial: https://www.html.it/articoli/creare-uno-slider-con-html-e-css-tutorial
 
 .footer {
   position: fixed;
-  bottom: 5%;
-  right: 5%;
+  bottom: 0%;
+  right: 2%;
   color: grey;
 }
 
