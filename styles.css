@@ -55,6 +55,10 @@ p.titolo a:hover {
   color:  rgb(181, 102, 102); 
 }
 
+p.titolo a:active {
+  color:rgb(255, 0, 64); 
+}
+
 .bio {
   grid-row: 3;
   text-align: center;
@@ -121,7 +125,7 @@ main p {
 }
 
 .phototable {
-  width: 60vw; 
+  width: 60vw;
   display: flex; 
   flex-direction: row;
   justify-content: center;
@@ -163,7 +167,30 @@ main p {
 }
 
 .bigcard img {
-  max-width: 100%; 
+  max-width: 100%;
+  max-height: 100%; 
+}
+
+.bigcard a:link, a:visited {
+  text-decoration: none;
+  color:rgb(181, 102, 102);
+}
+
+.bigcard a:hover {
+  color:rgb(51, 173, 204); 
+}
+
+.bigcard a:active {
+  color:rgb(255, 0, 64); 
+}
+
+.multiple {
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+.multiple img {
+  width: 50%; 
 }
 
 .contatti {
@@ -173,7 +200,7 @@ main p {
 .contactform {
   display: block;
   text-align: center; 
-  height: 520px;
+  height: 90%;
   overflow: hidden;  
 }
 
@@ -228,4 +255,9 @@ tutorial: https://www.html.it/articoli/creare-uno-slider-con-html-e-css-tutorial
   bottom: 5%;
   right: 5%;
   color: grey;
+}
+
+.footer p {
+ border: 1px solid grey; 
+ padding: 0.3rem; 
 }
